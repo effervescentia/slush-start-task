@@ -1,0 +1,55 @@
+{
+  "name": "<%= appNameSlug %>",
+  "version": "<%= appVersion %>",
+  "description": "<%= appDescription %>",
+  "keywords": [
+    "start",
+    "start-task"
+  ],
+  "main": "build/index.js",
+  "homepage": "https://github.com/<%= userName %>/<%= appNameSlug %>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/<%= userName %>/<%= appNameSlug %>.git"
+  },
+  "author": {
+    "name": "<%= authorName %>",
+    "email": "<%= authorEmail %>",
+    "url": "https://github.com/<%= userName %>"
+  },
+  "bugs": {
+    "url": "https://github.com/<%= userName %>/<%= appNameSlug %>/issues"
+  },
+  "files": [
+    "build/"
+  ],
+  "scripts": {
+    "start": "start-runner -f ./tasks.js",
+    "prepush": "yarn start prepush",
+    "prepublish": "yarn start build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "release": {
+    "verifyConditions": "condition-circle"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-start": "^0.1.0",
+    "condition-circle": "^1.5.0",
+    "cz-conventional-changelog": "^1.2.0",
+    "husky": "^0.13.0",
+    "semantic-release": "^6.3.2",
+    "semistandard": "^9.2.1",
+    "start-babel-cli": "^4.0.1",
+    "start-standard-preset": "^1.1.0",
+    "tape": "^4.6.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

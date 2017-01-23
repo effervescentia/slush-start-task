@@ -1,0 +1,52 @@
+{
+  "name": "slush-start-task",
+  "description": "Slush generator for Start tasks",
+  "version": "0.0.0-development",
+  "homepage": "https://github.com/effervescentia/slush-start-task",
+  "author": {
+    "name": "Ben Teichman",
+    "email": "ben.l.teichman@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/effervescentia/slush-start-task.git"
+  },
+  "bugs": {
+    "url": "https://github.com/effervescentia/slush-start-task/issues"
+  },
+  "license": "MIT",
+  "main": "slushfile.js",
+  "engines": {
+    "node": ">= 0.10.26",
+    "npm": ">=1.4.3"
+  },
+  "scripts": {
+    "test": "echo \"No tests\"",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "dependencies": {
+    "gulp": "^3.6.2",
+    "gulp-conflict": "^0.1.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-template": "^0.1.1",
+    "gulp-yarn": "^0.0.5",
+    "iniparser": "^1.0.5",
+    "inquirer": "^0.8.0",
+    "slush": ">=1.0.0",
+    "underscore.string": "^2.3.3"
+  },
+  "keywords": [
+    "start",
+    "slushgenerator"
+  ],
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.2.0",
+    "semantic-release": "^6.3.2",
+    "semistandard": "^9.2.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
