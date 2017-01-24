@@ -4,4 +4,4 @@ export { start, build, coverage, dev, test, tdd } from 'start-standard-preset';
 
 export const lint = _lint.bind(null, 'semistandard');
 export const ci = _ci.bind(null, 'semistandard');
-export const pre = _prepush.bind(null, 'semistandard');
+export const prepush = _prepush.bind(null, 'semistandard');
