@@ -10,7 +10,7 @@
   "homepage": "https://github.com/<%= userName %>/<%= appNameSlug %>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/<%= userName %>/<%= appNameSlug %>.git"
+    "url": "https://github.com/<%= userName %>/<%= appNameSlug %>.git"
   },
   "author": {
     "name": "<%= authorName %>",
