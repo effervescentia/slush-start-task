@@ -1,0 +1,21 @@
+version: "{build}"
+init:
+  - git config --global core.autocrlf false
+shallow_clone: true
+environment:
+  matrix:
+    - nodejs_version: "6"
+cache:
+ - "%LOCALAPPDATA%\\Yarn"
+branches:
+  only:
+    - master
+skip_tags: true
+matrix:
+  fast_finish: true
+build: off
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - yarn
+test_script:
+  - yarn start lint

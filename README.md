@@ -1,4 +1,13 @@
-# Slush Slush-start-task [![Build Status](https://secure.travis-ci.org/effervescentia/slush-start-task.png?branch=master)](https://travis-ci.org/effervescentia/slush-start-task) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-start-task.png)](http://badges.enytc.com/for/npm/slush-start-task)
+# Slush Start Task
+
+[![npm](https://img.shields.io/npm/v/slush-start-task.svg?style=flat-square)](https://www.npmjs.com/package/slush-start-task)
+[![linux build](https://img.shields.io/travis/effervescentia/slush-start-task/master.svg?label=linux&style=flat-square)](https://travis-ci.org/effervescentia/slush-start-task)
+[![windows build](https://img.shields.io/appveyor/ci/effervescentia/slush-start-task/master.svg?label=windows&style=flat-square)](https://ci.appveyor.com/project/effervescentia/slush-start-task)
+[![deps](https://david-dm.org/effervescentia/slush-start-task.svg?style=flat-square)](https://david-dm.org/effervescentia/slush-start-task)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
+[![greenkeeper](https://badges.greenkeeper.io/effervescentia/slush-start-task.svg)](https://greenkeeper.io/)
+
 
 > Slush generator for Start tasks
 
