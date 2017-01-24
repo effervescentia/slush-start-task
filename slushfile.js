@@ -90,7 +90,8 @@ gulp.task('default', function (done) {
           answers.year = new Date().getFullYear();
           answers.appNameSlug = `start-${_.slugify(answers.taskName)}`;
           answers.appNameCamel = _.camelize(answers.appNameSlug);
-          gulp.src(path.join(__dirname, 'templates', '**'))
+
+          gulp.src(path.join(__dirname, 'templates', '**', '*'))
                 .pipe(template(answers, { interpolate: /<%=([\s\S]+?)%>/g }))
                 .pipe(rename(function (file) {
                   if (file.basename[0] === '_') {
