@@ -16,13 +16,13 @@ $ npm install -g slush-start-task
 Create a new folder for your project:
 
 ```bash
-$ mkdir my-slush-start-task
+$ mkdir start-my-task
 ```
 
 Run the generator from within the new folder:
 
 ```bash
-$ cd my-slush-start-task && slush slush-start-task
+$ cd start-my-task && slush start-task
 ```
 
 ## Getting To Know Slush
@@ -40,7 +40,7 @@ See the [CONTRIBUTING Guidelines](https://github.com/effervescentia/slush-start-
 ## Support
 If you have any problem or suggestion please open an issue [here](https://github.com/effervescentia/slush-start-task/issues).
 
-## License 
+## License
 
 The MIT License
 
@@ -66,4 +66,3 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
-
