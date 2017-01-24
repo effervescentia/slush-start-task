@@ -9,7 +9,7 @@
 [![greenkeeper](https://badges.greenkeeper.io/effervescentia/slush-start-task.svg)](https://greenkeeper.io/)
 
 
-> Slush generator for Start tasks
+> [Slush](http://slushjs.github.io/) generator for [Start](https://github.com/start-runner/start) tasks
 
 
 ## Getting Started
