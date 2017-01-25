@@ -2,7 +2,7 @@
 
 
 [![npm](https://img.shields.io/npm/v/<%= appNameSlug %>.svg?style=flat-square)](https://www.npmjs.com/package/<%= appNameSlug %>)
-[![linux build](https://img.shields.io/circleci/<%= userName %>/<%= appNameSlug %>/master.svg?label=linux&style=flat-square)](https://travis-ci.org/<%= userName %>/<%= appNameSlug %>)
+[![linux build](https://img.shields.io/circleci/project/github/<%= userName %>/<%= appNameSlug %>/master.svg?label=linux&style=flat-square)](https://circleci.com/gh/<%= userName %>/<%= appNameSlug %>)
 [![windows build](https://img.shields.io/appveyor/ci/<%= userName %>/<%= appNameSlug %>/master.svg?label=windows&style=flat-square)](https://ci.appveyor.com/project/<%= userName %>/<%= appNameSlug %>)
 [![coverage](https://img.shields.io/codecov/c/github/<%= userName %>/<%= appNameSlug %>/master.svg?style=flat-square)](https://codecov.io/github/<%= userName %>/<%= appNameSlug %>)
 [![deps](https://david-dm.org/<%= userName %>/<%= appNameSlug %>.svg?style=flat-square)](https://david-dm.org/<%= userName %>/<%= appNameSlug %>)
