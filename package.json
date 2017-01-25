@@ -30,14 +30,14 @@
   },
   "dependencies": {
     "gulp": "^3.6.2",
-    "gulp-conflict": "^0.1.1",
+    "gulp-conflict": "^0.4.0",
     "gulp-rename": "^1.2.0",
-    "gulp-template": "^0.1.1",
+    "gulp-template": "^4.0.0",
     "gulp-yarn": "^0.0.5",
     "iniparser": "^1.0.5",
-    "inquirer": "^0.8.0",
+    "inquirer": "^3.0.0",
     "slush": ">=1.0.0",
-    "underscore.string": "^2.3.3"
+    "underscore.string": "^3.3.4"
   },
   "keywords": [
     "start",
