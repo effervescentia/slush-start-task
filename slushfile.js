@@ -82,27 +82,27 @@ gulp.task('default', function (done) {
     message: 'Continue?'
   }];
     // Ask
-  inquirer.prompt(prompts,
-        function (answers) {
-          if (!answers.moveon) {
-            return done();
-          }
-          answers.year = new Date().getFullYear();
-          answers.appNameSlug = `start-${_.slugify(answers.taskName)}`;
-          answers.appNameCamel = _.camelize(answers.appNameSlug);
+  inquirer.prompt(prompts)
+    .then(function (answers) {
+      if (!answers.moveon) {
+        return done();
+      }
+      answers.year = new Date().getFullYear();
+      answers.appNameSlug = `start-${_.slugify(answers.taskName)}`;
+      answers.appNameCamel = _.camelize(answers.appNameSlug);
 
-          gulp.src(`${__dirname}/templates/**/*`)
-                .pipe(template(answers, { interpolate: /<%=([\s\S]+?)%>/g }))
-                .pipe(rename(function (file) {
-                  if (file.basename[0] === '_') {
-                    file.basename = '.' + file.basename.slice(1);
-                  }
-                }))
-                .pipe(conflict('./'))
-                .pipe(gulp.dest('./'))
-                .pipe(yarn())
-                .on('end', function () {
-                  done();
-                });
-        });
+      gulp.src(path.join(__dirname, 'templates', '**', '*'))
+            .pipe(template(answers, { interpolate: /<%=([\s\S]+?)%>/g }))
+            .pipe(rename(function (file) {
+              if (file.basename[0] === '_') {
+                file.basename = '.' + file.basename.slice(1);
+              }
+            }))
+            .pipe(conflict('./'))
+            .pipe(gulp.dest('./'))
+            .pipe(yarn())
+            .on('end', function () {
+              done();
+            });
+    });
 });
