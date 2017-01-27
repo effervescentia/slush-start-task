@@ -1,7 +1,9 @@
-import { lint as _lint, ci as _ci, prepush as _prepush } from 'start-standard-preset';
+import Start from 'start';
+import reporter from 'start-pretty-reporter';
+import tape from 'start-tape';
+import tapSpec from 'tap-spec';
+import { restart } from 're-start';
 
-export { start, build, coverage, dev, test, tdd } from 'start-standard-preset';
+const start = Start(reporter());
 
-export const lint = _lint.bind(null, 'semistandard');
-export const ci = _ci.bind(null, 'semistandard');
-export const prepush = _prepush.bind(null, 'semistandard');
+module.exports = restart(start, { test: tape, testOpts: tapSpec });
