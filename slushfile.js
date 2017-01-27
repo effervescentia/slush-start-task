@@ -97,6 +97,9 @@ gulp.task('default', function (done) {
               if (file.basename[0] === '_') {
                 file.basename = '.' + file.basename.slice(1);
               }
+              if (file.basename[0] === '$') {
+                file.basename = file.basename.slice(1);
+              }
             }))
             .pipe(conflict('./'))
             .pipe(gulp.dest('./'))
