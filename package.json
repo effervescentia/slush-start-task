@@ -46,7 +46,7 @@
   "devDependencies": {
     "condition-circle": "^1.5.0",
     "cz-conventional-changelog": "^1.2.0",
-    "semantic-release": "^6.3.2",
+    "semantic-release": "^8.0.3",
     "semistandard": "^9.2.1",
     "start-env": "^3.0.0",
     "start-simple-cli": "^4.1.1",
