@@ -44,7 +44,7 @@
     "slushgenerator"
   ],
   "devDependencies": {
-    "condition-circle": "^1.5.0",
+    "condition-circle": "^2.0.2",
     "cz-conventional-changelog": "^1.2.0",
     "semantic-release": "^6.3.2",
     "semistandard": "^9.2.1",
