@@ -35,7 +35,7 @@
     "gulp-template": "^5.0.0",
     "gulp-yarn": "^0.0.5",
     "iniparser": "^1.0.5",
-    "inquirer": "^3.0.0",
+    "inquirer": "^7.0.0",
     "slush": ">=1.0.0",
     "underscore.string": "^3.3.4"
   },
